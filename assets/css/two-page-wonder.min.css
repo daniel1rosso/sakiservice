@@ -1,0 +1,57 @@
+html{width: 100%; background-color:#E7E7E7;}
+body{height: 100%;width: 100%;}
+
+.page-wrapper{
+    margin-left: auto; /*hacer que esto sea posible solamente cuando NO es responsibe*/
+}
+.header-button{
+    margin-left: auto;
+}
+/*MARGENES PARA EQULIBRAR A CONTENEDORES CUANDO ES ESCRITORIO*/
+.page-wrapper .page-container .listaPedidos{margin-top: 8%}
+.page-wrapper .page-container .listaUsuarios{margin-top: 8%}
+.page-wrapper .page-container .addPedidos{margin-top: 8%}
+
+.header-mobile-inner .logo{width:13%;}
+.botonNuevoUsuario, .botonNuevoPedido{text-align: right;}
+
+.listaDespegable{
+    border: 1px solid gray;
+    border-radius: 5px;  
+}
+.hamburger{
+    border-radius: 10px;
+}
+
+.form-group .btn{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablaAddPedidos, .tablaPedidos{display: none;}
+
+
+
+@media screen and (max-width:991px){
+    .header-desktop{display: none;}
+    .page-wrapper .page-container .container-fluid{margin-top: 1%;}
+    
+}
+@media screen and (max-width:370px){
+    .title-1{font-size: 150%;}
+    .header-mobile-inner .logo{width: 30%;}
+}
+@media screen and (max-width:700px){
+    
+    .header-mobile-inner .logo{width: 20%;}
+    .paginate_button{
+       font-size: 55%;
+    }
+    .form-group .btn{width: 90%; font-size: 70%;}
+}
+@media screen and (max-width:630px){
+    .botonNuevoUsuario, .botonNuevoPedido{
+        text-align: center;
+    }
+}
